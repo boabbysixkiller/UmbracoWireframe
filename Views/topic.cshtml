@@ -1,0 +1,78 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Topic>
+    @using ContentModels = Umbraco.Web.PublishedContentModels;
+    @{
+    Layout = "base.cshtml";
+    }
+    <div class="container topic">
+        <div class="row">
+            <h2>@Umbraco.Field("pageHeader")</h2>
+        </div>
+        <div class="row">
+            <h3>@Umbraco.Field("pageSummary")</h3>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Guidance</h3>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Publications</h3>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Data</h3>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Resources</h3>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>News</h3>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                </ul>
+            </div>
+        </div>
+    </div>

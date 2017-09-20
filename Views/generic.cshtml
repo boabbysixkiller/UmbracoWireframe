@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "base.cshtml";
+}
+<div class="container">
+<div class="row">
+<h2>@Umbraco.Field("pageHeader")</h2>    
+</div>
+<div class="row">
+<h3>@Umbraco.Field("pageSummary")</h3>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+        
+@{
+	var selection = Model.Content.Children().Where(x => x.IsVisible());
+    
+}
+<ul>
+	@foreach(var item in selection){
+		<li>
+			<a href="@item.Url">@item.Name</a>
+		</li>
+	}
+</ul>
+
+
+    </div>
+</div>
+
